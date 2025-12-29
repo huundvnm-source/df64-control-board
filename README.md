@@ -57,7 +57,7 @@ Default baud rate is commonly 115200; check `src/main.cpp` for any `Serial.begin
 
 ## Working:
 
-- Relay off on startup
+- Relay off on startup.
 - Press and hold push button (>500ms): relay on until released.
 - Press button: relay on; press again to off. Auto off after 60s without any press to protect motor.
 
@@ -87,4 +87,5 @@ If you make improvements, open a PR or create issues describing the change.
 ---
 
 If you'd like, I can expand this README with wiring diagrams, annotated code snippets from `src/main.cpp`, or PlatformIO configuration examples tailored to your board. Which would you like next?
+
 

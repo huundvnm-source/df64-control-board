@@ -51,6 +51,15 @@ Default baud rate is commonly 115200; check `src/main.cpp` for any `Serial.begin
 
 - Connect the board's USB to your computer.
 - If external peripherals (displays, sensors) are used, consult the pin definitions in `include/` or `src/main.cpp`.
+- Push button connects to D5 (GPIO14) with internal pullup, active low (ground to active).
+- Relay module connects to D6 (GPIO12), recommend 220V/10VAC.
+- Entire system powered by 5VDC 1A adapter.
+
+## Working:
+
+- Relay off on startup
+- Press and hold push button (>500ms): relay on until released.
+- Press button: relay on; press again to off. Auto off after 60s without any press to protect motor.
 
 ## Code overview (`src/main.cpp`)
 
@@ -78,3 +87,4 @@ If you make improvements, open a PR or create issues describing the change.
 ---
 
 If you'd like, I can expand this README with wiring diagrams, annotated code snippets from `src/main.cpp`, or PlatformIO configuration examples tailored to your board. Which would you like next?
+

@@ -1,4 +1,4 @@
-# df64 — Quick Tutorial
+# df64-control-board — Quick Tutorial
 
 ## Overview
 
@@ -20,12 +20,12 @@ This repository folder contains a PlatformIO-based ESP32 project (df64). This RE
 
 ## Build and upload
 
-From the `df64` directory you can use PlatformIO CLI or VS Code PlatformIO controls.
+From the `df64-control-board` directory you can use PlatformIO CLI or VS Code PlatformIO controls.
 
 Using PlatformIO CLI:
 
 ```bash
-cd df64
+cd df64-control-board
 pio run            # build
 pio run -t upload  # build + upload to board
 ```
@@ -87,5 +87,6 @@ If you make improvements, open a PR or create issues describing the change.
 ---
 
 If you'd like, I can expand this README with wiring diagrams, annotated code snippets from `src/main.cpp`, or PlatformIO configuration examples tailored to your board. Which would you like next?
+
 
 
